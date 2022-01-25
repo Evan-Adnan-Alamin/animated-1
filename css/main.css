@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&display=swap');
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;line-height: 1.8;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p{ 
+    word-spacing: 3px;
+}
+
+section, footer {
+    padding: 7rem 10%;
+}
+.btn {
+    background: rgb(255, 19, 129);
+    padding: 1.5rem 2.6rem;
+    margin-top: 2rem;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.4s;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: rgb(47, 4, 27);
+    color: #fff;
+
+}
+.heading {
+    font-size: 6.2rem;
+    padding: 5rem;
+    text-align: center;
+    color: aliceblue;
+    word-spacing: 3px;
+}
+
+
+/*Header design*/
+.header {
+    background: #0e0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 3rem;
+}
+.header .logo img {
+    height: 6rem;
+}
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.header .navbar a:hover {
+    color: rgb(117, 116, 116);
+    padding-bottom: .5rem;
+}
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icons div:hover {
+    color: #c2c2c2;
+}
+#menu-btn {
+    display: none;
+}
+
+
+
+main {
+    background: #1a1919;
+}
+
+/*Home area Design*/
+
+
+.home {
+    background: url(../img/bg-image-1.jpg);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    margin-top: 6rem;
+}
+.home h1,p {
+    color: #fff;
+    line-height: 1.6;
+}
+.home h1{
+    font-size: 4.5rem;
+}
+.home p {
+    font-size: 1.8rem;
+}
+.home span {
+    color: rgb(255, 19, 129);
+}
+.home .content {
+    max-width: 60rem;
+}
+
+/*About Area design*/
+
+.about h1 {
+    text-align: start;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 2.5rem;
+    color: #b3b3b3;
+}
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+}
+.about .row .image {
+    flex: 1 1 45rem;
+}
+.about .row .image img{
+    width: 100%;
+    box-shadow: 4px 5px 7px #5a5454;
+}
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    padding-top: 0;
+}
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #ff1381;
+    font-weight: 200;
+}
+.about .row .content p {
+    font-size: 1.8rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.about .content a {
+    margin: 4rem 0;
+    padding: 1.5rem 2.3rem;
+    background-color: #ff1381;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    transition: .6s;
+}
+.about .content a:hover {
+    letter-spacing: 4px;
+}
+br {
+    width: 100%;
+    height: 5px;
+    color: black;
+}
+/*===========================
+skill area design
+==============================*/
+.skill .heading{
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+.skill h3 {
+    font-size: 2.5rem;
+    color: #ff1381;
+    font-weight: 200;
+    text-align: center;
+    word-spacing: 4px;
+}
+.skill .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
+}
+    .skill .box-container .box {
+    box-sizing: content-box;
+    max-width: 20rem;
+    height: 5rem;
+    box-shadow: 4px 5px 5px #5a5454;
+    padding: 4rem 8rem;
+    border-radius: 3px;
+    transition: .5s;
+}
+.skill .box-container .box img {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transition: .6s;
+}
+.skill .box-container .box:hover{
+    background: #131212;
+    
+}
+.skill .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+/*===========================
+service area design
+==============================*/
+
+.service .box-container {
+    display: flex;
+    gap: 5rem;
+}
+.service .box-container .box {
+    background-color: rgb(34, 34, 34);
+    padding: 1.4rem 2.3rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 4px #5a5454;
+    transition: .4s; 
+}
+.service h4{
+    color: #ff1381;
+    font-size: 2rem;
+    font-weight: 200;
+    padding:1.5rem 0;
+}
+.service h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    padding-bottom: 3rem;
+}
+
+.service h3 {
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 2.6rem;
+    font-weight: 400;
+    word-spacing: 4px;
+}
+.service i {
+    font-size: 3.5rem;
+    color: #ff1381;
+}
+
+.service p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+
+.service .box-container .box:hover {
+    transform: scale(1.1);
+    transition: .4s linear; 
+    background: #131212;
+}
+
+.service .box-container .box:hover a:hover i{
+    color: #8f3b62;cursor: pointer;
+}
+
+/*===========================
+Client area design
+==============================*/
+
+.client .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 10rem;
+    justify-content: center;
+    text-align: center;
+}
+.client img {
+    padding: 2rem 0;
+}
+.client .box-container .box {
+    box-shadow: 5px 5px 5px #5a5454;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.client .box-container .box:hover {
+    background-color: #131212;
+    transform: scale(1.2);
+}
+.client h4{
+    color: #fff;
+    font-size: 2.8rem;
+    padding: 4rem;
+}
+
+/*=====================
+testimonial area
+==========================*/
+
+.pricing .box-container {
+    display: flex;
+    gap: 5rem;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.price-about {
+    max-width: 35rem;
+}
+.pricing h4 {
+    color: #ff1381;
+    font-weight: 200;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+}
+.pricing h1 {
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+}
+.pricing p {
+    max-width: 50rem;
+    font-size: 1.8rem;
+}
+
+.pricing .list {
+    list-style-type: none;
+}
+
+.pricing .price{
+    padding: 2rem 5rem;
+    padding-left: 1rem;
+    border: 2px solid rgb(100, 100, 100);
+    box-shadow: 2px 3px 4px 5px #2e2b2b;
+    transition: .6s linear;
+}
+.pricing .price:hover {
+    background: #0e0d0d;
+}
+.pricing .price h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    padding-bottom: 0;
+}
+.pricing .price h6{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+}
+.pricing .price h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+}
+.pricing .price h2 span{ 
+    color: rgb(190, 174, 174);
+    font-size: 2rem;
+    text-decoration: line-through;
+}
+.pricing .price li {
+    font-size: 1.8rem;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+.pricing .price li i{
+    padding-right: 1rem;
+}
+
+/*===============================
+Blog area design
+=============================*/
+
+.blog .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 5rem;
+    margin-top: 1.5rem;
+}
+.blog .box-container .box {
+    padding: 2.5rem;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    border-radius: 5px;
+    text-align: left;
+    transition: .5s linear;
+}
+.blog .box-container .box:hover {
+    background: #0e0d0d;
+}
+
+.blog .img-box img{
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.blog h4 {
+    color: #ff1381;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight:100;
+}
+.blog .heading{
+    padding-top: 0;
+}
+.blog h6 {
+    color: #ff1381;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    padding-bottom: 1.5rem;
+}
+.blog h3 {
+    font-size: 2.6rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+.blog .h6 {
+    display: flex;
+    justify-content: space-between;
+}
+.blog .h6 h5 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    word-spacing: 3px;
+    color: #ff1381;
+    letter-spacing: 1px;
+}
+
+/*===============================
+Contact area design
+=============================*/
+.contact a , .contact p,  .contact h2, .contact h3, .contact h4, .contact h5, .contact h6{
+    color: #909090;
+}
+.contact .box-container {
+    display: flex;
+    gap: 3rem;
+}
+.contact .contact-info {
+    max-width: 30rem;
+}
+.contact .contact-info img {
+    max-width: 100%;
+    border-radius: 1.4rem;
+}
+.contact .contact-info {
+    max-width: 50rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+.contact input {
+    padding: 2rem 5rem;
+    margin: 2rem 0;
+    width: 100%;
+    border-radius: 1rem;
+}
+.contact textarea {
+    padding: 2rem 5rem;
+    margin: 1rem 2.5rem;
+    width: 60%;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+.contact h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.contact .box h4 {
+    color: #fff;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+.contact h6 {
+    font-size: 1.8rem;
+}
+.contact p {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.contact .color {
+    color: #fff;
+}
+.contact .social {
+    padding: 1rem 0;
+}
+.contact .social a {
+    margin: 1rem;
+    margin-left: 0;
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+    font-size: #bbb;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+/*===============================
+Footer area design
+=============================*/
+
+.footer {
+    background: #1a1919;
+}
+.footer .box-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.footer .social {
+    margin-top: 2.5rem;
+}
+.footer .social a{
+    color: azure;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+.footer h3 {
+    font-size: 2.4rem;
+    color: #ff1381;
+    padding-bottom: 2rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.footer li {
+    list-style-type: none;
+}
+.footer li a{
+    color: #fff;
+    font-size: 1.6rem;
+    transition: .5s;
+}
+.footer li a:hover {
+    color: #6b6b6b;
+}
+.footer .copyright {
+    text-align: center;
+    margin-top: 8rem;
+    color: azure;
+}
+.footer .copyright h4 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 100;
+    word-spacing: 2px;
+}
+.footer .copyright a{
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1.5rem;
+    border: 2px solid black;
+}
+.footer .copyright a i{
+    color: #fff;
+}
+.footer .copyright a:hover {
+    background: #000;
+    color: blanchedalmond;
+}
